@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/date/format
+Content-Type: application/json
+
+{
+  "beforeDate": "20210209181459",
+  "beforePattern": "yyyyMMddHHmmss",
+  "afterPattern": "yyyy년 MM월 dd일 HH시 mm분 ss초"
+}
+
+###
