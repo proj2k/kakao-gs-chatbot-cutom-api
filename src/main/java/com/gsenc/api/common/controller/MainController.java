@@ -1,4 +1,4 @@
-package com.gsenc.api.controller;
+package com.gsenc.api.common.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +13,6 @@ public class MainController {
     @RequestMapping("/")
     public String index() {
         logger.debug("Called Main Page");
-        return "{}";
+        return "{\"test\":\"value\"}";
     }
 }

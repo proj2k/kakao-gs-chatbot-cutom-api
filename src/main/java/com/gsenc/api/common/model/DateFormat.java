@@ -1,4 +1,4 @@
-package com.gsenc.api.model;
+package com.gsenc.api.common.model;
 
 public class DateFormat {
     private String beforeDate;

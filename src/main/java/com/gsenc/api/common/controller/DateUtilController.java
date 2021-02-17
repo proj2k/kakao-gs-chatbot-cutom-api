@@ -1,6 +1,6 @@
-package com.gsenc.api.controller;
+package com.gsenc.api.common.controller;
 
-import com.gsenc.api.model.DateFormat;
+import com.gsenc.api.common.model.DateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class DateUtilController {
 
     Logger logger = LoggerFactory.getLogger(DateUtilController.class);
 
-    @PostMapping("/date/format")
+    @PostMapping("/common/date/format")
     public DateFormat convertDateFormat(@RequestBody DateFormat dateFormat) throws ParseException {
 
         String beforePattern = dateFormat.getBeforePattern();
