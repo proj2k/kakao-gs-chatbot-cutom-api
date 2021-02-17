@@ -18,8 +18,8 @@ public class PaymentController {
     Logger logger = LoggerFactory.getLogger(PaymentController.class);
 
     @PostMapping("/payment/getContractBankNumber/simpleText")
-    public Map<String, String> getContractBankNumber(@RequestBody Map<String, Map<String, List<Map<String, String>>>> data) {
-        Map<String, List<Map<String, String>>> result = data.get("result");
+    public Map<String, String> getContractBankNumber(@RequestBody Map data) {
+        Map<String, List<Map<String, String>>> result = (Map<String, List<Map<String, String>>>) data.get("result");
         List<Map<String, String>> resultData = result.get("data");
         StringBuilder stringBuilder = new StringBuilder();
         for (Map<String, String> resultDatum : resultData) {
